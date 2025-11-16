@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Picnic Photos</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* Fullscreen Modal Styles */
+  #modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  #modalOverlay img {
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    transition: transform 0.5s ease;
+  }
+</style>
+</head>
+<body class="bg-gray-100">
+
+<header class="hero h-[150px] justify-center text-center">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl text-white font-bold drop-shadow-md tracking-wide">🏫 Perpeti High School</h1>
+    <p class="text-lg md:text-2xl mt-2 text-white font-medium">✨ SSC Batch - 2018 ✨</p>
+  </div>
+</header>
+
+<section class="relative">
+  <img src="2.jpg" alt="Batch Group Photo" class="w-full h-100 md:h-[800px] object-cover">
+  <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60 flex items-center justify-center">
+    <h2 class="text-white text-2xl md:text-4xl font-bold tracking-wider drop-shadow-lg">“Together We Shine – Batch 2018”</h2>
+  </div>
+</section>
+
+<main class="max-w-6xl mx-auto p-6">
+  <h3 class="text-3xl font-extrabold text-gray-800 mb-6">Picnic Photo Gallery</h3>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Card Example -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="1A2A6117.jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="1A2A6117.jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="1A2A5885 (1).jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="1A2A5885 (1).jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="1A2A5907.jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="1A2A5907.jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="1A2A5944.jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="1A2A5944.jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="1A2A5543.jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="1A2A5543.jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="1A2A5550.jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="1A2A5550.jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="1A2A5907.jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="1A2A5907.jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="80.jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="80.jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+      <img src="1A2A5564.jpg" class="w-full h-72 object-cover rounded-t-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:-translate-y-2" />
+      <div class="p-4">
+        <button class="w-full py-2 mt-4 text-white font-semibold rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-md hover:from-indigo-600 hover:to-purple-600 transition view-btn" data-src="1A2A5564.jpg">
+          View Full Image
+        </button>
+      </div>
+    </div>
+
+    <!-- আরো image cards একইভাবে add করতে পারবে -->
+
+  </div>
+</main>
+
+<!-- Modal -->
+<div id="modalOverlay" class="flex">
+  <img id="modalImg" src="" style="max-width: 90%; max-height: 90%;" />
+</div>
+
+<footer class="footer text-white text-center py-5 mt-12 shadow-inner">
+  <p class="text-sm md:text-base">© 2025 Perpeti High School SSC Batch 2018 | Designed with ❤️ by Sakib & Batch Members</p>
+</footer>
+
+<script>
+// সব button select কর
+const buttons = document.querySelectorAll('.view-btn');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalImg = document.getElementById('modalImg');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const imgSrc = btn.getAttribute('data-src'); // প্রতিটি button এর নিজস্ব image
+    modalImg.src = imgSrc;
+    modalOverlay.style.display = 'flex';
+    modalImg.style.transform = 'scale(0)';
+    setTimeout(() => modalImg.style.transform = 'scale(1)', 50);
+  });
+});
+
+// Modal close on overlay click
+modalOverlay.addEventListener('click', () => {
+  modalImg.style.transform = 'scale(0)';
+  setTimeout(() => { modalOverlay.style.display = 'none'; }, 300);
+});
+
+// ESC key close
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape'){
+    modalImg.style.transform = 'scale(0)';
+    setTimeout(() => { modalOverlay.style.display = 'none'; }, 300);
+  }
+});
+
+</script>
+
+</body>
+</html>
